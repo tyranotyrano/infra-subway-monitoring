@@ -1072,7 +1072,7 @@ export function 최단경로_조회_성공(경로탐색_response) {
 - 최단경로 조회 페이지(임계값 : 1500ms)
   - smoke test : 통과
   - load test : 실패
-  - stress test : 실패
+  - stress test : 실패 -> 운영 가능한 최대 동시 접속사용자 수 = 150 VUs 
   - ※경로조회 API 는 다소 무거워 http_req_duration 결과에서 fail 이 발생했는데, @Cacheable 등을 통해 성능개선을 하거나 API 내부 구현 자체를 개선할 필요성이 대두댐
   
 #### 5. 추가 설정
